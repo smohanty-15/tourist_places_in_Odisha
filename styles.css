@@ -38,20 +38,30 @@ section h2 {
     color: #2e3b55;
 }
 
-ul {
-    list-style-type: none;
+.tourist-spot {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
-ul li {
-    margin: 15px 0;
+.tourist-spot img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
 }
 
-ul li h3 {
+.spot-info {
+    max-width: 600px;
+}
+
+.spot-info h3 {
     font-size: 1.5em;
     color: #0073e6;
 }
 
-ul li p {
+.spot-info p {
     font-size: 1em;
     color: #555;
     margin-top: 5px;
@@ -77,8 +87,19 @@ footer {
         font-size: 1.5em;
     }
 
-    ul li h3 {
-        font-size: 1.3em;
+    .tourist-spot {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tourist-spot img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .spot-info {
+        text-align: center;
     }
 
     footer {
